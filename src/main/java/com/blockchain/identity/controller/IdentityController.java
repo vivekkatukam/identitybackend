@@ -30,4 +30,14 @@ public class IdentityController {
     public String verify(@PathVariable Long id) {
         return service.verify(id);
     }
+
+    @GetMapping("/identities")
+    public List<Identity> getIdentities() {
+        return service.getIdentities();
+    }
+
+    @GetMapping("/identity/{id}")
+    public Identity getIdentity(@PathVariable Long id) {
+        return service.getIdentity(id);
+    }
 }

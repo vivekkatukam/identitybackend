@@ -55,10 +55,19 @@ public class BlockchainService {
 
         Identity identity = identityRepo.findById(id).orElse(null);
 
-        if (identity == null) return "Identity Not Found";
+        if (identity == null)
+            return "Identity Not Found";
 
         boolean exists = blockRepo.findAll().stream().anyMatch(b -> b.getData().equals(identity.getIdentityHash()));
 
         return exists ? "Identity Verified ✅" : "Verification Failed ❌";
+    }
+
+    public List<Identity> getIdentities() {
+        return identityRepo.findAll();
+    }
+
+    public Identity getIdentity(Long id) {
+        return identityRepo.findById(id).orElse(null);
     }
 }
