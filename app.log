@@ -1,0 +1,366 @@
+Blockchain Identity Verification Application 
+Started at: 24-03-2026 11:59:45.05 
+ 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.blockchain:identity-verification >----------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.12:run (default-cli) > test-compile @ identity-verification >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ identity-verification ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ identity-verification ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ identity-verification ---
+[INFO] skip non existing resourceDirectory d:\NANI\identity-verification\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ identity-verification ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.12:run (default-cli) < test-compile @ identity-verification <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.12:run (default-cli) @ identity-verification ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.12)
+
+2026-03-24T12:00:02.300+05:30  INFO 24304 --- [  restartedMain] c.b.identity.BlockchainApplication       : Starting BlockchainApplication using Java 21.0.8 with PID 24304 (d:\NANI\identity-verification\target\classes started by VIVEK in d:\NANI\identity-verification)
+2026-03-24T12:00:02.300+05:30  INFO 24304 --- [  restartedMain] c.b.identity.BlockchainApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T12:00:02.352+05:30  INFO 24304 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-24T12:00:02.352+05:30  INFO 24304 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-24T12:00:03.049+05:30  INFO 24304 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T12:00:03.120+05:30  INFO 24304 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2026-03-24T12:00:03.671+05:30  INFO 24304 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-24T12:00:03.688+05:30  INFO 24304 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T12:00:03.688+05:30  INFO 24304 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-24T12:00:03.739+05:30  INFO 24304 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-24T12:00:03.739+05:30  INFO 24304 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1387 ms
+2026-03-24T12:00:03.913+05:30  INFO 24304 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-24T12:00:03.931+05:30  INFO 24304 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-03-24T12:00:03.982+05:30  INFO 24304 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-24T12:00:04.188+05:30  INFO 24304 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T12:00:04.214+05:30  INFO 24304 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-24T12:00:04.349+05:30  INFO 24304 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blockchain_db user=SA
+2026-03-24T12:00:04.363+05:30  INFO 24304 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-24T12:00:04.425+05:30  WARN 24304 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-24T12:00:04.454+05:30  INFO 24304 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T12:00:06.689+05:30  INFO 24304 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists block cascade 
+Hibernate: drop table if exists identity cascade 
+Hibernate: create table block (id bigint generated by default as identity, timestamp bigint not null, data varchar(255), hash varchar(255), previous_hash varchar(255), primary key (id))
+Hibernate: create table identity (id bigint generated by default as identity, document_number varchar(255), email varchar(255), identity_hash varchar(255), name varchar(255), primary key (id))
+2026-03-24T12:00:06.739+05:30  INFO 24304 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T12:00:07.278+05:30  WARN 24304 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-24T12:00:07.891+05:30  INFO 24304 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blockchain_db'
+2026-03-24T12:00:08.078+05:30  WARN 24304 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9ab48613-98d7-40fd-bcb2-41cd01cba7b8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-24T12:00:08.090+05:30  INFO 24304 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-24T12:00:08.420+05:30  INFO 24304 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-24T12:00:08.450+05:30  INFO 24304 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-24T12:00:08.457+05:30  INFO 24304 --- [  restartedMain] c.b.identity.BlockchainApplication       : Started BlockchainApplication in 6.586 seconds (process running for 7.045)
+2026-03-24T12:00:59.345+05:30  INFO 24304 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-24T12:00:59.345+05:30  INFO 24304 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-24T12:00:59.347+05:30  INFO 24304 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-24T12:01:44.265+05:30  INFO 24304 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-24T12:01:44.314+05:30  INFO 24304 --- [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-24T12:01:44.731+05:30  INFO 24304 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-24T12:01:44.746+05:30  INFO 24304 --- [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: drop table if exists block cascade 
+Hibernate: drop table if exists identity cascade 
+2026-03-24T12:01:44.809+05:30  WARN 24304 --- [       Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-03-24T12:01:44.825+05:30  INFO 24304 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-24T12:01:44.872+05:30  INFO 24304 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.12)
+
+2026-03-24T12:01:46.066+05:30  INFO 24304 --- [  restartedMain] c.b.identity.BlockchainApplication       : Starting BlockchainApplication using Java 21.0.8 with PID 24304 (d:\NANI\identity-verification\target\classes started by VIVEK in d:\NANI\identity-verification)
+2026-03-24T12:01:46.066+05:30  INFO 24304 --- [  restartedMain] c.b.identity.BlockchainApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T12:01:47.757+05:30  INFO 24304 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T12:01:47.865+05:30  INFO 24304 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2026-03-24T12:01:49.097+05:30  INFO 24304 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-24T12:01:49.097+05:30  INFO 24304 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T12:01:49.097+05:30  INFO 24304 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-24T12:01:49.239+05:30  INFO 24304 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-24T12:01:49.239+05:30  INFO 24304 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3068 ms
+2026-03-24T12:01:49.448+05:30  INFO 24304 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-24T12:01:49.479+05:30  INFO 24304 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-24T12:01:49.548+05:30  INFO 24304 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T12:01:49.548+05:30  INFO 24304 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-24T12:01:49.548+05:30  INFO 24304 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:blockchain_db user=SA
+2026-03-24T12:01:49.548+05:30  INFO 24304 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-24T12:01:49.548+05:30  WARN 24304 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-24T12:01:49.564+05:30  INFO 24304 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T12:01:49.629+05:30  INFO 24304 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists block cascade 
+Hibernate: drop table if exists identity cascade 
+Hibernate: create table block (id bigint generated by default as identity, timestamp bigint not null, data varchar(255), hash varchar(255), previous_hash varchar(255), primary key (id))
+Hibernate: create table identity (id bigint generated by default as identity, document_number varchar(255), email varchar(255), identity_hash varchar(255), name varchar(255), primary key (id))
+2026-03-24T12:01:49.634+05:30  INFO 24304 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T12:01:49.837+05:30  WARN 24304 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-24T12:01:50.191+05:30  INFO 24304 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blockchain_db'
+2026-03-24T12:01:50.337+05:30  WARN 24304 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 58d77bf9-c71c-485e-a75b-40bc261cba8f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-24T12:01:50.337+05:30  INFO 24304 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-24T12:01:50.436+05:30  INFO 24304 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-24T12:01:50.453+05:30  INFO 24304 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-24T12:01:50.468+05:30  INFO 24304 --- [  restartedMain] c.b.identity.BlockchainApplication       : Started BlockchainApplication in 4.807 seconds (process running for 109.055)
+2026-03-24T12:01:50.469+05:30  INFO 24304 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-24T12:02:26.601+05:30  INFO 24304 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-24T12:02:26.601+05:30  INFO 24304 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-24T12:02:26.602+05:30  INFO 24304 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+^CBlockchain Identity Verification Application 
+Started at: 24-03-2026 12:32:33.68 
+ 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.blockchain:identity-verification >----------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.12:run (default-cli) > test-compile @ identity-verification >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ identity-verification ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ identity-verification ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ identity-verification ---
+[INFO] skip non existing resourceDirectory d:\NANI\identity-verification\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ identity-verification ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.12:run (default-cli) < test-compile @ identity-verification <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.12:run (default-cli) @ identity-verification ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.12)
+
+2026-03-24T12:32:39.579+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : Starting BlockchainApplication using Java 21.0.8 with PID 20756 (d:\NANI\identity-verification\target\classes started by VIVEK in d:\NANI\identity-verification)
+2026-03-24T12:32:39.579+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T12:32:39.638+05:30  INFO 20756 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-24T12:32:39.638+05:30  INFO 20756 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-24T12:32:40.246+05:30  INFO 20756 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T12:32:40.306+05:30  INFO 20756 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-03-24T12:32:40.813+05:30  INFO 20756 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-24T12:32:40.813+05:30  INFO 20756 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T12:32:40.813+05:30  INFO 20756 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-24T12:32:40.862+05:30  INFO 20756 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-24T12:32:40.862+05:30  INFO 20756 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1224 ms
+2026-03-24T12:32:41.064+05:30  INFO 20756 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-24T12:32:41.130+05:30  INFO 20756 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-03-24T12:32:41.179+05:30  INFO 20756 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-24T12:32:41.579+05:30  INFO 20756 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T12:32:41.645+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-24T12:32:41.845+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:blockchain_db user=SA
+2026-03-24T12:32:41.845+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-24T12:32:41.878+05:30  WARN 20756 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-24T12:32:41.895+05:30  INFO 20756 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T12:32:42.880+05:30  INFO 20756 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists block cascade 
+Hibernate: drop table if exists identity cascade 
+Hibernate: create table block (id bigint generated by default as identity, timestamp bigint not null, data varchar(255), hash varchar(255), previous_hash varchar(255), primary key (id))
+Hibernate: create table identity (id bigint generated by default as identity, document_number varchar(255), email varchar(255), identity_hash varchar(255), name varchar(255), primary key (id))
+2026-03-24T12:32:42.912+05:30  INFO 20756 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T12:32:43.176+05:30  WARN 20756 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-24T12:32:43.398+05:30  INFO 20756 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blockchain_db'
+2026-03-24T12:32:43.461+05:30  WARN 20756 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bed258d7-df4c-42c5-ade2-8753efb97add
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-24T12:32:43.480+05:30  INFO 20756 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-24T12:32:43.603+05:30  INFO 20756 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-24T12:32:43.638+05:30  INFO 20756 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-24T12:32:43.651+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : Started BlockchainApplication in 4.488 seconds (process running for 4.918)
+2026-03-24T12:33:42.641+05:30  INFO 20756 --- [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-24T12:33:42.641+05:30  INFO 20756 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-24T12:33:42.641+05:30  INFO 20756 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-24T12:35:26.225+05:30  INFO 20756 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 8 deletions, 0 modifications)
+2026-03-24T12:35:26.234+05:30  INFO 20756 --- [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-24T12:35:26.314+05:30  INFO 20756 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-24T12:35:26.318+05:30  INFO 20756 --- [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: drop table if exists block cascade 
+Hibernate: drop table if exists identity cascade 
+2026-03-24T12:35:26.327+05:30  WARN 20756 --- [       Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-03-24T12:35:26.328+05:30  INFO 20756 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-24T12:35:26.330+05:30  INFO 20756 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.12)
+
+2026-03-24T12:35:26.665+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : Starting BlockchainApplication using Java 21.0.8 with PID 20756 (D:\NANI\identity-verification\target\classes started by VIVEK in d:\NANI\identity-verification)
+2026-03-24T12:35:26.665+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T12:35:26.895+05:30  INFO 20756 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T12:35:26.905+05:30  INFO 20756 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-03-24T12:35:27.185+05:30  INFO 20756 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-24T12:35:27.188+05:30  INFO 20756 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T12:35:27.189+05:30  INFO 20756 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-24T12:35:27.241+05:30  INFO 20756 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-24T12:35:27.241+05:30  INFO 20756 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 571 ms
+2026-03-24T12:35:27.343+05:30  INFO 20756 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-24T12:35:27.347+05:30  INFO 20756 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-24T12:35:27.362+05:30  INFO 20756 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T12:35:27.366+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-24T12:35:27.372+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:blockchain_db user=SA
+2026-03-24T12:35:27.373+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-24T12:35:27.376+05:30  WARN 20756 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-24T12:35:27.377+05:30  INFO 20756 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T12:35:27.415+05:30  INFO 20756 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-24T12:35:27.417+05:30  INFO 20756 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T12:35:27.911+05:30  WARN 20756 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-24T12:35:28.235+05:30  INFO 20756 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blockchain_db'
+2026-03-24T12:35:28.300+05:30  WARN 20756 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a8e944e5-963c-4b62-a7cb-3f6a74a8e15d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-24T12:35:28.302+05:30  INFO 20756 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-24T12:35:28.392+05:30  INFO 20756 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-24T12:35:28.430+05:30  INFO 20756 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-24T12:35:28.444+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : Started BlockchainApplication in 1.85 seconds (process running for 169.712)
+2026-03-24T12:35:28.453+05:30  INFO 20756 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-24T12:35:29.929+05:30  INFO 20756 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (8 additions, 0 deletions, 0 modifications)
+2026-03-24T12:35:29.963+05:30  INFO 20756 --- [       Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-24T12:35:30.098+05:30  INFO 20756 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-24T12:35:30.101+05:30  INFO 20756 --- [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T12:35:30.101+05:30  WARN 20756 --- [       Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-03-24T12:35:30.101+05:30  INFO 20756 --- [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-24T12:35:30.101+05:30  INFO 20756 --- [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.12)
+
+2026-03-24T12:35:30.269+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : Starting BlockchainApplication using Java 21.0.8 with PID 20756 (d:\NANI\identity-verification\target\classes started by VIVEK in d:\NANI\identity-verification)
+2026-03-24T12:35:30.269+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-24T12:35:30.727+05:30  INFO 20756 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-24T12:35:30.745+05:30  INFO 20756 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2026-03-24T12:35:30.857+05:30  INFO 20756 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-24T12:35:30.857+05:30  INFO 20756 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-24T12:35:30.857+05:30  INFO 20756 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-24T12:35:30.872+05:30  INFO 20756 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-24T12:35:30.872+05:30  INFO 20756 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 591 ms
+2026-03-24T12:35:30.916+05:30  INFO 20756 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-24T12:35:30.922+05:30  INFO 20756 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-24T12:35:30.928+05:30  INFO 20756 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-24T12:35:30.928+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-24T12:35:30.934+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:blockchain_db user=SA
+2026-03-24T12:35:30.934+05:30  INFO 20756 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-24T12:35:30.934+05:30  WARN 20756 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-24T12:35:30.934+05:30  INFO 20756 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-24T12:35:30.994+05:30  INFO 20756 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists block cascade 
+Hibernate: drop table if exists identity cascade 
+Hibernate: create table block (id bigint generated by default as identity, timestamp bigint not null, data varchar(255), hash varchar(255), previous_hash varchar(255), primary key (id))
+Hibernate: create table identity (id bigint generated by default as identity, document_number varchar(255), email varchar(255), identity_hash varchar(255), name varchar(255), primary key (id))
+2026-03-24T12:35:31.000+05:30  INFO 20756 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-24T12:35:31.070+05:30  WARN 20756 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-24T12:35:31.129+05:30  INFO 20756 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:blockchain_db'
+2026-03-24T12:35:31.147+05:30  WARN 20756 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2b742208-59e1-4581-9269-a7a6aa81ac56
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-24T12:35:31.147+05:30  INFO 20756 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-24T12:35:31.173+05:30  INFO 20756 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-24T12:35:31.186+05:30  INFO 20756 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-24T12:35:31.189+05:30  INFO 20756 --- [  restartedMain] c.b.identity.BlockchainApplication       : Started BlockchainApplication in 0.965 seconds (process running for 172.457)
+2026-03-24T12:35:31.189+05:30  INFO 20756 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-24T12:37:06.501+05:30  INFO 20756 --- [nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-24T12:37:06.501+05:30  INFO 20756 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-24T12:37:06.502+05:30  INFO 20756 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select b1_0.id,b1_0.data,b1_0.hash,b1_0.previous_hash,b1_0.timestamp from block b1_0
+2026-03-24T12:44:58.122+05:30  WARN 20756 --- [l-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=3m56s972ms11µs700ns).
+2026-03-24T16:01:51.668+05:30  WARN 20756 --- [l-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=3h16m53s550ms431µs299ns).
+^C

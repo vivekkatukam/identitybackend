@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Identity Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Blockchain Identity Verification</h1>
+        
+        <!-- Register Identity -->
+        <div class="section">
+            <h2>Register Identity</h2>
+            <form id="registerForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="documentNumber" placeholder="Document Number" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="registerResult"></p>
+        </div>
+
+        <!-- View Blockchain -->
+        <div class="section">
+            <h2>View Blockchain</h2>
+            <button onclick="getChain()">Load Blockchain</button>
+            <div id="chainResult"></div>
+        </div>
+
+        <!-- Verify Identity -->
+        <div class="section">
+            <h2>Verify Identity</h2>
+            <input type="number" id="verifyId" placeholder="Enter Identity ID" min="1">
+            <button onclick="verifyIdentity()">Verify</button>
+            <p id="verifyResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
