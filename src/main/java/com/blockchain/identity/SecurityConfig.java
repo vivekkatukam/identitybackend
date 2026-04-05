@@ -1,4 +1,4 @@
-package com.blockchain.identity;
+package main.java.com.blockchain.identity;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
